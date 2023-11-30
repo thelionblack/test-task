@@ -26,21 +26,21 @@
     line-height: normal;
 }
 
-.select__option::-webkit-scrollbar {
+.select__options::-webkit-scrollbar {
     width: 8px;
 }
 
-.select__option::-webkit-scrollbar-track {
+.select__options::-webkit-scrollbar-track {
     background-color: #fff;
 }
 
-.select__option::-webkit-scrollbar-thumb {
+.select__options::-webkit-scrollbar-thumb {
     width: 7px;
     height: 146px;
     background-color: #D9D9D9;
 }
 
-.select__option {
+.select__options {
     max-height: 171px;
     border: 1px solid #DAD6D6;
 
@@ -60,7 +60,7 @@
     transition: all .3s linear;
 }
 
-.select__option .option {
+.select__options .select__options-item {
     padding: 10px 15px;
 }
 
@@ -70,7 +70,7 @@
     background: #F0EFEF;
 }
 
-.select__option .option:hover {
+.select__option .select__options-item:hover {
     border: 1px solid #DAD6D6;
 
     background: #F0EFEF;

@@ -3,6 +3,15 @@ import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setSelectedValue, selectAllCurrencyState } from '@/store/slices/currencySlices';
 import ArrowDownIcon from '@/components/ArrowDownIcon/ArrowDownIcon';
 
+enum EClassNames {
+  select = 'select',
+  main = `${EClassNames.select}-main`,
+  open = 'open',
+  selected = 'selected',
+  options = `${EClassNames.select}__options`,
+  option = `${EClassNames.options}-item`
+}
+
 const CurrencySelect = () => {
   const { selectedValue, currencyOptions } = useAppSelector(selectAllCurrencyState);
   const [isOpen, setIsOpen] = useState(false);
@@ -20,17 +29,21 @@ const CurrencySelect = () => {
   };
 
   return (
-    <div className='select'>
-      <div className={`select-main ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+    <div className={EClassNames.select}>
+      <div
+        className={`${EClassNames.main} ${isOpen ? EClassNames.open : ''}`}
+        onClick={() => setIsOpen(!isOpen)}>
         {selectedValue ? selectedValue : ''}
         <ArrowDownIcon />
       </div>
       {isOpen && (
-        <ul className='select__option'>
+        <ul className={EClassNames.options}>
           {currencyOptions.map((option) => (
             <li
               key={option.id}
-              className={`option ${selectedValue === option.id ? 'selected' : ''}`}
+              className={`${EClassNames.option} ${
+                selectedValue === option.id ? EClassNames.selected : ''
+              }`}
               onClick={() => handleSelectChange(option.id)}>
               {option.id}
             </li>
