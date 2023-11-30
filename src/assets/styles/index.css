@@ -33,3 +33,17 @@
         z-index: 11111;
 
     }
+
+.currency__title {
+    text-align: center;
+    color: #FFF;
+
+    font-family: Kreon;
+    font-size: 9.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

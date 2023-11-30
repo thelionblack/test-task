@@ -3,10 +3,11 @@ import '@/assets/styles/index.css';
 import Logo from '@/components/Logo';
 import { useGetCurrenciesQuery } from '@/api/currencyApi';
 import { setCurrency } from '@/store/slices/currencySlices';
-import { useAppDispatch } from '@/store/hooks';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import CurrencySelect from '@/components/CurrencySelect';
 
 const App = () => {
+  const { currencyOptions, selectedValue } = useAppSelector((state) => state.currencySlice);
   const dispatch = useAppDispatch();
   const { data: currencyDate, error, isLoading, isSuccess } = useGetCurrenciesQuery('');
 
@@ -33,7 +34,9 @@ const App = () => {
         </div>
       </div>
       <div className='block__element--bottom'>
-        <p className='currency__title'></p>
+        <p className='currency__title'>
+          {currencyOptions.find((option) => option.id === selectedValue)?.name || ''}
+        </p>
       </div>
     </div>
   );
