@@ -29,7 +29,7 @@ const App = () => {
   return (
     <div className='block'>
       <div className='block__element--top'>
-        <div>
+        <div className='header'>
           <Logo />
           <CurrencySelect />
         </div>
