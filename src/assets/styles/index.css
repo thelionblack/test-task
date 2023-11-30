@@ -6,6 +6,7 @@
 .block {
     height: 100vh;
 
+    flex: 0 0 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,8 +26,9 @@
         }
 
     .block__element--bottom {
-        padding: 31px 66px 50px;
+        padding: 20px 66px;
 
+        flex: 0 0 50%;
         display: flex;
         justify-content: center;
         align-items: center;
