@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const CurrencySelect = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleSelectChange = (value: string) => {
+    setIsOpen(false);
+  };
+
+  return <div></div>;
 };
 
 export default CurrencySelect;
