@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { lazy, useEffect, useState } from 'react';
 import KittenImagePath from '@/assets/images/Kitten.png';
 
 const HANDLER_TYPE_RESIZE = 'resize';

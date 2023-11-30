@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { setSelectedValue, selectAllCurrencyState } from '@/store/slices/currencySlices';
-import ArrowDownIcon from '@/components/ArrowDownIcon/ArrowDownIcon';
+
+const ArrowDownIcon = lazy(() => import('@/components/ArrowDownIcon/ArrowDownIcon'));
 
 enum EClassNames {
   select = 'select',
@@ -34,7 +35,9 @@ const CurrencySelect = () => {
         className={`${EClassNames.main} ${isOpen ? EClassNames.open : ''}`}
         onClick={() => setIsOpen(!isOpen)}>
         {selectedValue ? selectedValue : ''}
-        <ArrowDownIcon />
+        <Suspense>
+          <ArrowDownIcon />
+        </Suspense>
       </div>
       {isOpen && (
         <ul className={EClassNames.options}>

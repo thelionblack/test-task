@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
 import { useGetCurrenciesQuery } from '@/api/currencyApi';
 import { selectAllCurrencyState, setCurrency } from '@/store/slices/currencySlices';
 import Logo from '@/components/Logo';
 import CurrencySelect from '@/components/CurrencySelect';
-import KittenImage from '@/components/KittenImage';
 import '@/assets/styles/index.css';
+
+const KittenImage = lazy(() => import('@/components/KittenImage'));
 
 enum EClassNames {
   block = 'block',
@@ -50,7 +51,9 @@ const App = () => {
         </p>
       </div>
 
-      <KittenImage />
+      <Suspense>
+        <KittenImage />
+      </Suspense>
     </div>
   );
 };

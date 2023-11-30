@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2162bbfe-4c59-4c4a-a13f-d591df2d8813" name="Changes" comment="" />
+    <list default="true" id="2162bbfe-4c59-4c4a-a13f-d591df2d8813" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CurrencySelect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrencySelect/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/KittenImage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/KittenImage/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701323127913</updated>
       <workItem from="1701323129459" duration="3480000" />
-      <workItem from="1701328617432" duration="12860000" />
+      <workItem from="1701328617432" duration="15522000" />
     </task>
     <servers />
   </component>
