@@ -3,8 +3,15 @@ import '@/assets/styles/index.css'
 
 const App = () => {
     return (
-        <div>
-            123
+        <div className='block'>
+            <div className='block__element--top'>
+
+            </div>
+            <div className='block__element--bottom'>
+                <p className='currency__title'>
+
+                </p>
+            </div>
         </div>
     );
 };
