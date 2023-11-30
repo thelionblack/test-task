@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
-import { setSelectedValue } from '@/store/slices/currencySlices';
+import { setSelectedValue, selectAllCurrencyState } from '@/store/slices/currencySlices';
 import ArrowDownIcon from '@/components/ArrowDownIcon/ArrowDownIcon';
 
 const CurrencySelect = () => {
-  const { selectedValue, currencyOptions } = useAppSelector((state) => state.currencySlice);
+  const { selectedValue, currencyOptions } = useAppSelector(selectAllCurrencyState);
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useAppDispatch();
 

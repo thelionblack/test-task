@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { TCurrencyOptions } from '@/types';
+import { RootState } from '@/store';
 
 type CurrencyState = {
   currencyOptions: TCurrencyOptions[];
@@ -27,3 +28,5 @@ export const currencySlice = createSlice({
 
 export const { setCurrency, setSelectedValue } = currencySlice.actions;
 export default currencySlice.reducer;
+
+export const selectAllCurrencyState = (state: RootState) => state.currencySlice;

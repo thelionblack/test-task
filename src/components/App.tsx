@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-import '@/assets/styles/index.css';
-import Logo from '@/components/Logo';
-import { useGetCurrenciesQuery } from '@/api/currencyApi';
-import { setCurrency } from '@/store/slices/currencySlices';
 import { useAppDispatch, useAppSelector } from '@/store/hooks';
+import { useGetCurrenciesQuery } from '@/api/currencyApi';
+import { selectAllCurrencyState, setCurrency } from '@/store/slices/currencySlices';
+import Logo from '@/components/Logo';
 import CurrencySelect from '@/components/CurrencySelect';
 import KittenImage from '@/components/KittenImage';
+import '@/assets/styles/index.css';
 
 const App = () => {
-  const { currencyOptions, selectedValue } = useAppSelector((state) => state.currencySlice);
+  const { currencyOptions, selectedValue } = useAppSelector(selectAllCurrencyState);
   const dispatch = useAppDispatch();
   const { data: currencyDate, error, isLoading, isSuccess } = useGetCurrenciesQuery('');
 
@@ -23,7 +23,7 @@ const App = () => {
   }
 
   if (error) {
-    return <div>Error: api error</div>;
+    return <div className='api__error'>Error: api error {JSON.stringify(error)}</div>;
   }
 
   return (
