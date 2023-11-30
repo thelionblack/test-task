@@ -6,7 +6,7 @@ const ArrowDownIcon = lazy(() => import('@/components/ArrowDownIcon/ArrowDownIco
 
 enum EClassNames {
   select = 'select',
-  main = `${EClassNames.select}-main`,
+  main = `${EClassNames.select}__main`,
   open = 'open',
   selected = 'selected',
   options = `${EClassNames.select}__options`,
