@@ -2,9 +2,8 @@
     width: 225px;
 
     position: absolute;
-    top: 45%;
+    top: 0;
     right: 16px;
-    transform: translateY(-45%);
     z-index: 1;
 }
 

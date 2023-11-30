@@ -34,7 +34,7 @@ const CurrencySelect = () => {
       <div
         className={`${EClassNames.main} ${isOpen ? EClassNames.open : ''}`}
         onClick={() => setIsOpen(!isOpen)}>
-        {selectedValue ? selectedValue : ''}
+        {selectedValue || ''}
         <Suspense>
           <ArrowDownIcon />
         </Suspense>
