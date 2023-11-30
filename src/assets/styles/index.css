@@ -1,0 +1,77 @@
+@import url('@/assets/styles/reset/reset.css');
+@import url('@/assets/styles/components/logo.css');
+@import url('@/assets/styles/components/currencySelect.css');
+@import url('@/assets/styles/components/kittenImage.css');
+
+.block {
+    height: 100vh;
+
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+    .block__top {
+        display: flex;
+        flex-direction: column;
+
+        background-color: #fff;
+    }
+
+        .header {
+            margin-left: 20px;
+        }
+
+    .block__bottom {
+        padding: 20px 66px;
+
+        flex: 0 0 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #000;
+        z-index: 11111;
+
+    }
+
+        .currency__title {
+            text-align: center;
+            color: #FFF;
+
+            font-family: Kreon;
+            font-size: 9.6rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+.api__error {
+    font-size: 3rem;
+}
+
+@media (max-width: 400px) {
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 11px;
+        }
+
+    .block__element--bottom {
+        padding: 20px 20px;
+    }
+
+        .currency__title {
+            font-size: 6.4rem;
+            overflow: inherit;
+            white-space: wrap;
+            text-overflow: inherit;
+        }
+}
