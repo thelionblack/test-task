@@ -1,0 +1,77 @@
+.select {
+    width: 181px;
+    height: 41px;
+
+}
+
+.select-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 10px 16px;
+    margin-bottom: 6px;
+
+    border-radius: 10px;
+    border: 1px solid #DAD6D6;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    outline: none;
+
+    color: #000;
+
+    font-family: Kreon;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.select__option::-webkit-scrollbar {
+    width: 8px;
+}
+
+.select__option::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.select__option::-webkit-scrollbar-thumb {
+    width: 7px;
+    height: 146px;
+    background-color: #D9D9D9;
+}
+
+.select__option {
+    max-height: 171px;
+    border: 1px solid #DAD6D6;
+
+    overflow: auto;
+
+    background: #FFF;
+    color: #000;
+
+    font-family: Kreon;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    position: relative;
+    z-index: 11411;
+    transition: all .3s linear;
+}
+
+.select__option .option {
+    padding: 10px 15px;
+}
+
+.select__option .selected {
+    border: 1px solid #DAD6D6;
+
+    background: #F0EFEF;
+}
+
+.select__option .option:hover {
+    border: 1px solid #DAD6D6;
+
+    background: #F0EFEF;
+}

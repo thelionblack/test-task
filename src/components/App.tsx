@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '@/assets/styles/index.css';
 import Logo from '@/components/Logo';
 import { useGetCurrenciesQuery } from '@/api/currencyApi';
+import { setCurrency } from '@/store/slices/currencySlices';
+import { useAppDispatch } from '@/store/hooks';
+import CurrencySelect from '@/components/CurrencySelect';
 
 const App = () => {
-  const { data, error, isLoading, isSuccess } = useGetCurrenciesQuery('');
+  const dispatch = useAppDispatch();
+  const { data: currencyDate, error, isLoading, isSuccess } = useGetCurrenciesQuery('');
 
-  if (isSuccess) {
-    console.log(data);
-  }
+  useEffect(() => {
+    if (isSuccess) {
+      dispatch(setCurrency(currencyDate.data));
+    }
+  }, [isSuccess]);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -23,6 +29,7 @@ const App = () => {
       <div className='block__element--top'>
         <div>
           <Logo />
+          <CurrencySelect />
         </div>
       </div>
       <div className='block__element--bottom'>
