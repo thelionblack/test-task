@@ -64,13 +64,13 @@
             padding: 10px 15px;
         }
 
-        .select__option .selected {
+        .select__options .selected {
             border: 1px solid #DAD6D6;
 
             background: #F0EFEF;
         }
 
-        .select__option .select__options-item:hover {
+        .select__options .select__options-item:hover {
             border: 1px solid #DAD6D6;
 
             background: #F0EFEF;

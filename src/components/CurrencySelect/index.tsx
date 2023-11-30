@@ -24,7 +24,7 @@ const CurrencySelect = () => {
     }
   }, [currencyOptions]);
 
-  const handleSelectChange = (value: string) => {
+  const handleSelectChange = (value: string) => () => {
     dispatch(setSelectedValue(value));
     setIsOpen(false);
   };
@@ -47,7 +47,7 @@ const CurrencySelect = () => {
               className={`${EClassNames.option} ${
                 selectedValue === option.id ? EClassNames.selected : ''
               }`}
-              onClick={() => handleSelectChange(option.id)}>
+              onClick={handleSelectChange(option.id)}>
               {option.id}
             </li>
           ))}
