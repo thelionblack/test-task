@@ -26,21 +26,21 @@
         line-height: normal;
     }
 
-    .select__options::-webkit-scrollbar {
+    .options::-webkit-scrollbar {
         width: 8px;
     }
 
-    .select__options::-webkit-scrollbar-track {
+    .options::-webkit-scrollbar-track {
         background-color: #fff;
     }
 
-    .select__options::-webkit-scrollbar-thumb {
+    .options::-webkit-scrollbar-thumb {
         width: 7px;
         height: 146px;
         background-color: #D9D9D9;
     }
 
-    .select__options {
+    .options {
         max-height: 171px;
         border: 1px solid #DAD6D6;
 
@@ -60,17 +60,17 @@
         transition: all .3s linear;
     }
 
-        .select__options .select__options-item {
+        .options .options__item {
             padding: 10px 15px;
         }
 
-        .select__options .selected {
+        .options .selected {
             border: 1px solid #DAD6D6;
 
             background: #F0EFEF;
         }
 
-        .select__options .select__options-item:hover {
+        .options .options__item:hover {
             border: 1px solid #DAD6D6;
 
             background: #F0EFEF;

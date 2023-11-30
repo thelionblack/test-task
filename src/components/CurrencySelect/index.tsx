@@ -9,8 +9,8 @@ enum EClassNames {
   main = `${EClassNames.select}__main`,
   open = 'open',
   selected = 'selected',
-  options = `${EClassNames.select}__options`,
-  option = `${EClassNames.options}-item`
+  options = `options`,
+  option = `${EClassNames.options}__item`
 }
 
 const CurrencySelect = () => {

@@ -26,9 +26,9 @@ const KittenImage = () => {
 
   return (
     windowWidth > 400 && (
-      <div className={EClassName.container}>
+      <figure className={EClassName.container}>
         <img className={EClassName.image} src={KittenImagePath} alt={IMG_ALT} />
-      </div>
+      </figure>
     )
   );
 };

@@ -7,9 +7,10 @@
     <list default="true" id="2162bbfe-4c59-4c4a-a13f-d591df2d8813" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/components/currencySelect.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/components/currencySelect.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CurrencySelect/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CurrencySelect/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/KittenImage/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/KittenImage/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +83,7 @@
       <updated>1701323127913</updated>
       <workItem from="1701323129459" duration="3480000" />
       <workItem from="1701328617432" duration="19124000" />
-      <workItem from="1701350931399" duration="2474000" />
+      <workItem from="1701350931399" duration="3624000" />
     </task>
     <servers />
   </component>

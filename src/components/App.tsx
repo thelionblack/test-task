@@ -10,8 +10,8 @@ const KittenImage = lazy(() => import('@/components/KittenImage'));
 
 enum EClassNames {
   block = 'block',
-  blockElementTop = `${EClassNames.block}__element--top`,
-  blockElementBottom = `${EClassNames.block}__element--bottom`,
+  blockElementTop = `${EClassNames.block}__top`,
+  blockElementBottom = `${EClassNames.block}__bottom`,
   header = 'header',
   apiError = 'api__error',
   currencyTitle = 'currency__title'
@@ -37,24 +37,24 @@ const App = () => {
   }
 
   return (
-    <div className={EClassNames.block}>
-      <div className={EClassNames.blockElementTop}>
+    <section className={EClassNames.block}>
+      <header className={EClassNames.blockElementTop}>
         <div className={EClassNames.header}>
           <Logo />
           <CurrencySelect />
         </div>
-      </div>
+      </header>
 
-      <div className={EClassNames.blockElementBottom}>
+      <footer className={EClassNames.blockElementBottom}>
         <p className={EClassNames.currencyTitle}>
           {currencyOptions.find((option) => option.id === selectedValue)?.name || ''}
         </p>
-      </div>
+      </footer>
 
       <Suspense>
         <KittenImage />
       </Suspense>
-    </div>
+    </section>
   );
 };
 
