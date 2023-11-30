@@ -1,6 +1,7 @@
 @import url('@/assets/styles/reset/reset.css');
 @import url('@/assets/styles/components/logo.css');
 @import url('@/assets/styles/components/currencySelect.css');
+@import url('@/assets/styles/components/kittenImage.css');
 
 .block {
     height: 100vh;
